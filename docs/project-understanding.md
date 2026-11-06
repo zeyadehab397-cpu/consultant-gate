@@ -1,7 +1,7 @@
 1. Product Purpose
-Consultant Gate is a platform that connect students and consultants with experienced professionals who offer consultation sessions
+   Consultant Gate is a platform that connect students and consultants with experienced professionals who offer consultation sessions
 
-The platform helps clients find consultants based on thier expertise 
+The platform helps clients find consultants based on thier expertise
 review thier profiles , availability , and book consultations
 
 consultants can also manage thier profiles , availability , and sessions
@@ -10,7 +10,8 @@ Administrators review consultants and handle operational issues
 
 2. User Roles
 
-: Client 
+: Client
+
 - Search for consultants based on their expertise.
 
 - View consultant profiles and availability.
@@ -18,7 +19,6 @@ Administrators review consultants and handle operational issues
 - Select a suitable consultation time.
 
 - Book and attend consultations.
-
 
 : Consultant
 
@@ -37,7 +37,6 @@ Administrators review consultants and handle operational issues
 - Handle platform issues.
 
 - Support platform operations.
-
 
 Example Booking Journey
 
