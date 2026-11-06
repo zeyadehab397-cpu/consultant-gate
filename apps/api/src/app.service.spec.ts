@@ -8,13 +8,13 @@ describe('AppService', () => {
     appService = new AppService();
   });
 
-it('should return a valid health response', () => {
-  const result = appService.getHealth();
+  it('should return a valid health response', () => {
+    const result = appService.getHealth();
 
-  expect(result).toEqual({
-    status: 'ok',
-    service: 'consultant-gate-api',
-    timestamp: expect.any(String),
-  }); 
-});
+    expect(result).toEqual({
+      status: 'ok',
+      service: 'consultant-gate-api',
+      timestamp: expect.any(String),
+    });
+  });
 });

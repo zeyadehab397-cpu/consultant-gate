@@ -1,5 +1,5 @@
 export interface HealthResponse {
   status: string;
-   service: string;
+  service: string;
   timestamp: string;
 }

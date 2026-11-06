@@ -14,18 +14,13 @@ describe('App', () => {
   });
 
   it('should display loading state', () => {
-    vi.mocked(getHealth).mockReturnValue(
-      new Promise<HealthResponse>(() => {}),
-    );
+    vi.mocked(getHealth).mockReturnValue(new Promise<HealthResponse>(() => {}));
 
     render(<App />);
 
-    expect(
-      screen.getByText('Checking API connection...'),
-    ).toBeInTheDocument();
+    expect(screen.getByText('Checking API connection...')).toBeInTheDocument();
   });
 
-  
   it('should display success state when API responds successfully', async () => {
     vi.mocked(getHealth).mockResolvedValue({
       status: 'ok',
@@ -35,9 +30,7 @@ describe('App', () => {
 
     render(<App />);
 
-    expect(
-      await screen.findByText('API Connected'),
-    ).toBeInTheDocument();
+    expect(await screen.findByText('API Connected')).toBeInTheDocument();
 
     expect(screen.getByText('Status: ok')).toBeInTheDocument();
 
@@ -46,12 +39,8 @@ describe('App', () => {
     ).toBeInTheDocument();
   });
 
-  
-  
   it('should display error state when API request fails', async () => {
-    vi.mocked(getHealth).mockRejectedValue(
-      new Error('Network Error'),
-    );
+    vi.mocked(getHealth).mockRejectedValue(new Error('Network Error'));
 
     render(<App />);
 

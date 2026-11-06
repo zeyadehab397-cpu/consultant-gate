@@ -11,8 +11,8 @@ import Joi from 'joi';
 
       validationSchema: Joi.object({
         PORT: Joi.number().port().default(3000),
-          WEB_ORIGIN: Joi.string().uri().default('http://localhost:5173'),
-      })
+        WEB_ORIGIN: Joi.string().uri().default('http://localhost:5173'),
+      }),
     }),
   ],
   controllers: [AppController],

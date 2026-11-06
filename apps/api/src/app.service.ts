@@ -3,10 +3,10 @@ import { HealthResponse } from './app.types';
 
 @Injectable()
 export class AppService {
-  getHealth(): HealthResponse{
+  getHealth(): HealthResponse {
     return {
       status: 'ok',
-       service: 'consultant-gate-api',
+      service: 'consultant-gate-api',
       timestamp: new Date().toISOString(),
     };
   }

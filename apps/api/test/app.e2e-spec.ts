@@ -16,17 +16,17 @@ describe('Health Endpoint (e2e)', () => {
     await app.init();
   });
 
-it('/api/health (GET)', async () => {
-  const response = await request(app.getHttpServer())
-    .get('/api/health')
-    .expect(200);
+  it('/api/health (GET)', async () => {
+    const response = await request(app.getHttpServer())
+      .get('/api/health')
+      .expect(200);
 
-  expect(response.body).toEqual({
-    status: 'ok',
-    service: 'consultant-gate-api',
-    timestamp: expect.any(String),
+    expect(response.body).toEqual({
+      status: 'ok',
+      service: 'consultant-gate-api',
+      timestamp: expect.any(String),
+    });
   });
-});
 
   afterEach(async () => {
     await app.close();

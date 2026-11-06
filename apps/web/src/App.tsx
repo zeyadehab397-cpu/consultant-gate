@@ -25,9 +25,7 @@ function App() {
         setHealth({
           status: 'error',
           message:
-            error instanceof Error
-              ? error.message
-              : 'Something went wrong',
+            error instanceof Error ? error.message : 'Something went wrong',
         });
       }
     }
@@ -39,9 +37,7 @@ function App() {
     <main>
       <h1>Consultant Gate</h1>
 
-      {health.status === 'loading' && (
-        <p>Checking API connection...</p>
-      )}
+      {health.status === 'loading' && <p>Checking API connection...</p>}
 
       {health.status === 'success' && (
         <section>

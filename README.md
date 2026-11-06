@@ -46,20 +46,20 @@ pnpm dev:api
 
 ## Available Scripts
 
-| Command | Description |
-|---|---|
-| `pnpm dev` | Start frontend and backend |
-| `pnpm build` | Build all applications |
-| `pnpm lint` | Run linting |
-| `pnpm test` | Run unit tests |
-| `pnpm test:e2e` | Run backend E2E tests |
+| Command         | Description                |
+| --------------- | -------------------------- |
+| `pnpm dev`      | Start frontend and backend |
+| `pnpm build`    | Build all applications     |
+| `pnpm lint`     | Run linting                |
+| `pnpm test`     | Run unit tests             |
+| `pnpm test:e2e` | Run backend E2E tests      |
 
 ## Application URLs
 
-| Application | URL |
-|---|---|
-| Frontend | http://localhost:5173 |
-| Backend | http://localhost:3000 |
+| Application  | URL                              |
+| ------------ | -------------------------------- |
+| Frontend     | http://localhost:5173            |
+| Backend      | http://localhost:3000            |
 | Health Check | http://localhost:3000/api/health |
 
 ## Health Check API
