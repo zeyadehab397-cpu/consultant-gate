@@ -44,3 +44,5 @@ jobs:
 
       - name: Build applications
         run: pnpm build
+      - name: Check formatting
+        run: pnpm format:check
