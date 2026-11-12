@@ -37,15 +37,15 @@ jobs:
 
       - name: Run unit tests
         run: pnpm test
-      - name: Run E2E tests 
+      - name: Run E2E tests
         run: pnpm test:e2e
         env:
-         NODE_ENV: test
-         DB_HOST: localhost
-        DB_PORT: 5433
-        DB_USERNAME: test_user
-        DB_PASSWORD: test_password
-        DB_NAME: consultant_gate_test
+          NODE_ENV: test
+          DB_HOST: localhost
+          DB_PORT: '5433'
+          DB_USERNAME: test_user
+          DB_PASSWORD: test_password
+          DB_NAME: consultant_gate_test
 
       - name: Build applications
         run: pnpm build
