@@ -28,9 +28,7 @@ export const specialties = [
   },
 ];
 
-export async function seedSpecialties(
-  dataSource: DataSource,
-) {
+export async function seedSpecialties(dataSource: DataSource) {
   for (const specialty of specialties) {
     await dataSource.query(
       `
@@ -42,11 +40,7 @@ export async function seedSpecialties(
         VALUES ($1, $2, $3)
         ON CONFLICT DO NOTHING
       `,
-      [
-        specialty.name,
-        specialty.slug,
-        specialty.description,
-      ],
+      [specialty.name, specialty.slug, specialty.description],
     );
   }
 }

@@ -20,7 +20,7 @@ export class CreateSpecialtiesTable1794428234406 implements MigrationInterface {
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-     await queryRunner.query(`
+    await queryRunner.query(`
       DROP TABLE specialties;
     `);
   }

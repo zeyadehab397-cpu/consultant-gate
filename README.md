@@ -195,30 +195,30 @@ Never point integration tests at the development or production database.
 
 ## Available Scripts
 
-| Command | Description |
-|---|---|
-| `pnpm dev` | Start frontend and backend |
-| `pnpm dev:web` | Start frontend |
-| `pnpm dev:api` | Start backend |
-| `pnpm build` | Build all applications |
-| `pnpm lint` | Run linting |
-| `pnpm test` | Run unit tests |
-| `pnpm test:e2e` | Run backend E2E tests |
+| Command                              | Description                    |
+| ------------------------------------ | ------------------------------ |
+| `pnpm dev`                           | Start frontend and backend     |
+| `pnpm dev:web`                       | Start frontend                 |
+| `pnpm dev:api`                       | Start backend                  |
+| `pnpm build`                         | Build all applications         |
+| `pnpm lint`                          | Run linting                    |
+| `pnpm test`                          | Run unit tests                 |
+| `pnpm test:e2e`                      | Run backend E2E tests          |
 | `pnpm --filter api test:integration` | Run database integration tests |
-| `pnpm --filter api migration:run` | Execute pending migrations |
-| `pnpm --filter api migration:revert` | Revert the latest migration |
-| `pnpm --filter api migration:show` | Display migration status |
-| `pnpm --filter api seed` | Insert development seed data |
+| `pnpm --filter api migration:run`    | Execute pending migrations     |
+| `pnpm --filter api migration:revert` | Revert the latest migration    |
+| `pnpm --filter api migration:show`   | Display migration status       |
+| `pnpm --filter api seed`             | Insert development seed data   |
 
 ## Application URLs
 
-| Application | URL |
-|---|---|
-| Frontend | http://localhost:5173 |
-| Backend | http://localhost:3000 |
-| API Health Check | http://localhost:3000/api/health |
-| Liveness | http://localhost:3000/health/live |
-| Readiness | http://localhost:3000/health/ready |
+| Application      | URL                                |
+| ---------------- | ---------------------------------- |
+| Frontend         | http://localhost:5173              |
+| Backend          | http://localhost:3000              |
+| API Health Check | http://localhost:3000/api/health   |
+| Liveness         | http://localhost:3000/health/live  |
+| Readiness        | http://localhost:3000/health/ready |
 
 ## Health Check API
 
@@ -261,19 +261,19 @@ Internal database credentials and error details are not exposed in the response.
 
 consultant-gate/
 ├── apps/
-│   ├── api/
-│   │   ├── src/
-│   │   │   └── database/
-│   │   │       ├── migration/
-│   │   │       └── seeds/
-│   │   ├── test/
-│   │   │   └── database/
-│   │   │       ├── helpers/
-│   │   │       ├── migrations.integration-spec.ts
-│   │   │       ├── constraints.integration-spec.ts
-│   │   │       └── seed.integration-spec.ts
-│   │   └── .env.example
-│   └── web/
+│ ├── api/
+│ │ ├── src/
+│ │ │ └── database/
+│ │ │ ├── migration/
+│ │ │ └── seeds/
+│ │ ├── test/
+│ │ │ └── database/
+│ │ │ ├── helpers/
+│ │ │ ├── migrations.integration-spec.ts
+│ │ │ ├── constraints.integration-spec.ts
+│ │ │ └── seed.integration-spec.ts
+│ │ └── .env.example
+│ └── web/
 ├── docs/
 ├── compose.yaml
 ├── .env.example
@@ -283,6 +283,7 @@ consultant-gate/
 ├── package.json
 ├── pnpm-lock.yaml
 └── pnpm-workspace.yaml
+
 ## Troubleshooting
 
 ### PostgreSQL container is not running

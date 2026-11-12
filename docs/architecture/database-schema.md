@@ -12,15 +12,15 @@ Schema changes are managed through TypeORM migrations. Automatic schema synchron
 
 The `specialties` table stores medical specialty information.
 
-| Column | Data Type | Nullable | Default | Constraints |
-|---|---|---|---|---|
-| `id` | UUID | No | `gen_random_uuid()` | Primary Key |
-| `name` | VARCHAR(150) | No | None | Unique |
-| `slug` | VARCHAR(150) | No | None | Unique |
-| `description` | TEXT | Yes | NULL | None |
-| `is_active` | BOOLEAN | No | TRUE | None |
-| `created_at` | TIMESTAMPTZ | No | CURRENT_TIMESTAMP | None |
-| `updated_at` | TIMESTAMPTZ | No | CURRENT_TIMESTAMP | None |
+| Column        | Data Type    | Nullable | Default             | Constraints |
+| ------------- | ------------ | -------- | ------------------- | ----------- |
+| `id`          | UUID         | No       | `gen_random_uuid()` | Primary Key |
+| `name`        | VARCHAR(150) | No       | None                | Unique      |
+| `slug`        | VARCHAR(150) | No       | None                | Unique      |
+| `description` | TEXT         | Yes      | NULL                | None        |
+| `is_active`   | BOOLEAN      | No       | TRUE                | None        |
+| `created_at`  | TIMESTAMPTZ  | No       | CURRENT_TIMESTAMP   | None        |
+| `updated_at`  | TIMESTAMPTZ  | No       | CURRENT_TIMESTAMP   | None        |
 
 ## Schema Diagram
 

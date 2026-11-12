@@ -12,9 +12,7 @@ dotenv.config({
 });
 
 if (process.env.DB_NAME !== 'consultant_gate_test') {
-  throw new Error(
-    'Tests can only run against consultant_gate_test',
-  );
+  throw new Error('Tests can only run against consultant_gate_test');
 }
 
 export function createTestDataSource() {
@@ -30,9 +28,7 @@ export function createTestDataSource() {
 
     entities: [],
 
-    migrations: [
-      CreateSpecialtiesTable1794428234406,
-    ],
+    migrations: [CreateSpecialtiesTable1794428234406],
 
     synchronize: false,
     migrationsRun: false,

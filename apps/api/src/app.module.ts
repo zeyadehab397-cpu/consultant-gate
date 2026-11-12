@@ -17,9 +17,7 @@ import Joi from 'joi';
 
         PORT: Joi.number().port().default(3000),
 
-        WEB_ORIGIN: Joi.string()
-          .uri()
-          .default('http://localhost:5173'),
+        WEB_ORIGIN: Joi.string().uri().default('http://localhost:5173'),
 
         DB_HOST: Joi.string().hostname().min(1).required(),
 
@@ -31,10 +29,9 @@ import Joi from 'joi';
 
         DB_NAME: Joi.string().min(1).required(),
       }),
-    
     }),
-  DatabaseModule,
-  HealthModule
+    DatabaseModule,
+    HealthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

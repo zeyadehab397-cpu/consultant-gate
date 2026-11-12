@@ -29,8 +29,8 @@ describe('Health Endpoint (e2e)', () => {
   });
 
   afterEach(async () => {
-  if (app) {
-    await app.close();
-  }
-});
+    if (app) {
+      await app.close();
+    }
+  });
 });

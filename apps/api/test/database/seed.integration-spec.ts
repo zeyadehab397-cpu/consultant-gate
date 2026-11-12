@@ -45,9 +45,7 @@ describe('Specialties Seed Integration Tests', () => {
       ORDER BY name;
     `);
 
-    const names = result.map(
-      (item: { name: string }) => item.name,
-    );
+    const names = result.map((item: { name: string }) => item.name);
 
     expect(names).toEqual([
       'Cardiology',

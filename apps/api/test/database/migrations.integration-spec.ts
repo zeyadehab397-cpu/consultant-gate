@@ -38,8 +38,7 @@ describe('Specialties Migration Integration Tests', () => {
     `);
 
     const columnNames = columns.map(
-      (column: { column_name: string }) =>
-        column.column_name,
+      (column: { column_name: string }) => column.column_name,
     );
 
     expect(columnNames).toEqual(
